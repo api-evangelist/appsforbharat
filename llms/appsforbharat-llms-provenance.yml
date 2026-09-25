@@ -1,0 +1,6 @@
+generated: '2026-09-25'
+method: probed
+generator: harvest-llms.py
+source: https://blog.appsforbharat.com/llms.txt
+bytes: 3224
+note: saved verbatim; the provider's own document

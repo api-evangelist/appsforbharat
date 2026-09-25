@@ -1,23 +1,68 @@
 aid: appsforbharat
+
 name: Appsforbharat
-description: 'Appsforbharat is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Appsforbharat is a digital platform dedicated to serving the devotional and spiritual needs of millions of devotees in India and abroad. It offers a suite of products such as Sri Mandir, daily darshan, puja booking, and spiritual content, aiming to provide a trusted, end‑to‑end tech solution for religious practices and community engagement.'
+
 url: https://raw.githubusercontent.com/api-evangelist/appsforbharat/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
 - Company
-apis: []
+- SpiritualTech
+- Platform
+- India
+- Community
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/appsforbharat-llms.txt
+- type: Hosts
+  url: hosts/appsforbharat-hosts.yml
+- type: Vendors
+  url: vendors/appsforbharat-vendors.yml
+- type: DomainSecurity
+  url: security/appsforbharat-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/appsforbharat
+  url: https://www.appsforbharat.com
+- type: Documentation
+  url: https://www.appsforbharat.com/en
+- type: Blog
+  url: https://blog.appsforbharat.com/
+- type: Support
+  url: https://www.appsforbharat.com/en/contact-us
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The documentation site https://www.appsforbharat.com/en is a JavaScript‑rendered single‑page app, preventing machine‑readable contract discovery.
+  evidence:
+    - url: https://www.appsforbharat.com/en
+      status: 200
+  checked: 2026-09-25
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
